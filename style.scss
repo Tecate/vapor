@@ -1,0 +1,185 @@
+@import 'glitch';
+
+body {
+	background: url('water2.gif') repeat;
+	font-family: times;
+	color: white;
+	cursor:url("cur.png"), auto;
+	margin: 0;
+}
+
+header {	text-align: center;}
+
+nav {
+	display: inline-block;
+	font: 28px 'Alegreya Sans SC', sans-serif;
+	ul {
+		padding: 0;
+		list-style: none;
+		list-style-type: none;
+		width: 100%;
+		display: table-row;
+	}
+
+	li {
+		float: left;
+		a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 20px 16px;
+			text-decoration: none;
+		}
+	}
+	
+	a:hover {
+			mix-blend-mode: hue;
+//			text-decoration: underline;
+	}
+}
+
+h1 {
+	font: 36px vcr_osd;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 5px;
+	margin: 0;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(left top, #ffa6ff, #6bffff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #ffa6ff, #6bffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #ffa6ff, #6bffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #ffa6ff, #6bffff); /* Standard syntax */
+}
+/*
+.gradient::before {
+	content: "";
+	background: url('scanline.png');
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+*/
+	
+.trans-text {
+	mix-blend-mode: multiply;
+	background: #000;
+}
+	
+.scanlines {
+	background: url('scanline.png') repeat;
+//	z-index: -1;
+}
+	
+@font-face {
+	font-family: vcr_osd;
+	src: url('vcr_osd.ttf');
+}
+	
+p {
+	padding: 20px;
+	line-height: 1.6;
+	margin: 0;
+	font: 24px vcr_osd;
+	text-transform: uppercase;
+}
+
+.p-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+}
+
+.float-right {
+	float: right;
+}
+
+.img-bust {
+	background-color: #000;
+	width: 400px;
+	height: 400px;
+	mix-blend-mode: multiply;
+}
+
+.jazz1 {
+	width: 100%;
+	height: 300px;
+	background-image: url('jazz.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 200%;
+	background-position:center;
+  background-blend-mode: difference;
+	background-color: white;
+	mix-blend-mode: multiply;
+}
+
+.jazz2 {
+	width: 100%;
+	height: 600px;
+	background-image: url('jazz.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+  mix-blend-mode: multiply;
+}
+
+.pvm{
+	width: 600px;
+	height: auto;
+}
+
+.jap-text {
+	ms-writing-mode: tb-rl;
+-webkit-writing-mode: vertical-rl;
+-moz-writing-mode: vertical-rl;
+-ms-writing-mode: vertical-rl;
+writing-mode: vertical-rl;
+-webkit-text-orientation: upright;
+-moz-text-orientation: upright;
+-ms-text-orientation: upright;
+text-orientation: upright;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 400px;
+	width: 100%;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: yellow;
+	p {
+		background: rgba(0,0,0,0.7);
+	}
+}
+
+.jap-ends {
+	width: 100%;
+}
+
+.pvm-screen {
+	position: absolute;
+	z-index: 99;
+	width: 600px;
+	height: 420px;
+	background: url('comp-crystals.png') no-repeat center center/350px 300px;
+	text-align: center;
+	font: 24px vcr_osd;
+}
+
+.email {
+	font-size: 45px;
+}
+
+footer {
+	height: 60px;
+	width: calc(100% - 40px);
+	line-height: 60px;
+	padding: 20px;
+	font-size: 28px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+
