@@ -33,7 +33,7 @@ nav {
 	}
 	
 	a:hover {
-			mix-blend-mode: hue;
+			color: pink;
 //			text-decoration: underline;
 	}
 }
@@ -47,22 +47,11 @@ h1 {
 }
 
 .gradient {
-  background: -webkit-linear-gradient(left top, #ffa6ff, #6bffff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #ffa6ff, #6bffff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #ffa6ff, #6bffff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #ffa6ff, #6bffff); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, #ffa6ff, #6bffff);
+  background: -o-linear-gradient(bottom right, #ffa6ff, #6bffff);
+  background: -moz-linear-gradient(bottom right, #ffa6ff, #6bffff);
+  background: linear-gradient(to bottom right, #ffa6ff, #6bffff);
 }
-/*
-.gradient::before {
-	content: "";
-	background: url('scanline.png');
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-}
-*/
 	
 .trans-text {
 	mix-blend-mode: multiply;
@@ -91,7 +80,7 @@ p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-
+	max-height: 500px;
 }
 
 .float-right {
@@ -100,12 +89,29 @@ p {
 
 .img-bust {
 	background-color: #000;
-	width: 400px;
-	height: 400px;
+	max-height: 500px;
 	mix-blend-mode: multiply;
+	flex: 1;
+	flex-grow: 1;
+//background: black url('bust2.jpg') no-repeat center center/100px 100px;
+	justify-content: center;
+}
+
+.flex-text {
+	overflow: auto;
 }
 
 .jazz1 {
+	width: 100%;
+	height: 600px;
+	background-image: url('jazz.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+  mix-blend-mode: multiply;
+}
+
+.jazz2 {
 	width: 100%;
 	height: 300px;
 	background-image: url('jazz.jpg');
@@ -117,16 +123,6 @@ p {
 	mix-blend-mode: multiply;
 }
 
-.jazz2 {
-	width: 100%;
-	height: 600px;
-	background-image: url('jazz.jpg');
-	background-repeat:no-repeat;
-	background-size:100% 100%;
-	background-position:center;
-  mix-blend-mode: multiply;
-}
-
 .pvm{
 	width: 600px;
 	height: auto;
@@ -134,14 +130,14 @@ p {
 
 .jap-text {
 	ms-writing-mode: tb-rl;
--webkit-writing-mode: vertical-rl;
--moz-writing-mode: vertical-rl;
--ms-writing-mode: vertical-rl;
-writing-mode: vertical-rl;
--webkit-text-orientation: upright;
--moz-text-orientation: upright;
--ms-text-orientation: upright;
-text-orientation: upright;
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	-webkit-text-orientation: upright;
+	-moz-text-orientation: upright;
+	-ms-text-orientation: upright;
+	text-orientation: upright;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -149,9 +145,9 @@ text-orientation: upright;
 	width: 100%;
 	font-family: sans-serif;
 	font-weight: 700;
-	color: yellow;
+	color: white;
 	p {
-		background: rgba(0,0,0,0.7);
+		background: rgba(0,0,0,1);
 	}
 }
 
